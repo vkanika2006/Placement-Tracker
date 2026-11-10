@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Preparation Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="container">
+
+    <header>
+        <h1>Placement Tracker</h1>
+        <p>Track your learning. Achieve your goals!</p>
+    </header>
+
+    <section class="dashboard">
+        <div class="card">
+            <h3>Total Tasks</h3>
+            <h2 id="totalTasks">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Completed</h3>
+            <h2 id="completedTasks">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Pending</h3>
+            <h2 id="pendingTasks">0</h2>
+        </div>
+    </section>
+
+    <section class="task-section">
+        <h2>My Daily Tasks</h2>
+
+        <div class="input-area">
+            <input type="text" id="taskInput"
+                placeholder="Enter your task">
+
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </section>
+
+    <section class="progress-section">
+        <h2>My Progress</h2>
+
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <p id="progressText">0% Completed</p>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
